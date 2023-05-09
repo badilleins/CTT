@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --orange:#f45f2a;
+    --white: #f9f9f9;
+    --black:#000000;
+    --yellow: #efb23b;
+    --grey:#7a7a7a;
+    --ligth-grey:#c9c4b9;
+    --opaque-orange:#f26522;
+    --dark-orange:#de500d;
+}
+button{
+    cursor:pointer;
+}
+a{
+    text-decoration: none;
+}
