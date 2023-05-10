@@ -1,12 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CTT inicio</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,100&display=swap" rel="stylesheet">
+<link href="./CSS/main.css" rel="stylesheet">
+<link href="./CSS/inicio.css" rel="stylesheet">
+<script src='main.js'></script>
 </head>
 <body>
-    
+    <header>
+        <nav class="bar-navigation">
+            <ul class="bar-navigation__list1">
+                <li class="list__item"><a href="#">Inicio</a></li>
+                <li class="list__item"><a href="nosotros.html">Nosotros</a></li>
+            </ul>            
+            <a href="index.html"><img src="./img/logoCTTprueba.png" alt="Logo-CTT"></a>
+            <ul class="bar-navigation__list2">
+                <li class="list__item"><a href="cursos.html">Oferta Académica</a></li>
+                <li class="list__item"><a href="footer.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <section class="head-carrousel">
+            <div class="carrousel__slider">
+                
+                <div class="carrousel__item">
+                    <div class="item__card" id="item__1">
+                        <img src="./img/332865845_917930966015360_8696366478627790146_n.jpg" alt="img">
+                    <button><a href="cursos.html">Nuestros cursos</a></button>
+                </div>
+                <div class="item__arrows">  
+                    <a href="#item__3"><img src="./img/left.png" alt="flecha-izquierda"></a>
+                    <a href="#item__2"><img src="./img/next.png" alt="flecha-derecha"></a>  
+                </div>
+            </div>
+            <div class="carrousel__item" id="item__2">
+                <div class="item__card">
+                    <img src="./img/332782594_1311646639399294_4202070185295153329_n.jpg" alt="img">
+                    <button><a href="cursos.html">Nosotros</a></button>
+                </div>
+                <div class="item__arrows">    
+                    <a href="#item__1"><img src="./img/left.png" alt="flecha-izquierda"></a>
+                    <a href="#item__3"><img src="./img/next.png" alt="flecha-derecha"></a>  
+                </div>
+            </div>
+            <div class="carrousel__item" id="item__3">
+                <div class="item__card">
+                    <img src="./img/332453489_1569065683587092_3393949353699397335_n.jpg" alt="img">
+                    <button><a id="#GoTo" href="cursos.html">Contacto</a></button>
+                </div>
+                <div class="item__arrows">    
+                    <a href="#item__2"><img src="./img/left.png" alt="flecha-izquierda"></a>
+                    <a href="#item__1"><img src="./img/next.png" alt="flecha-derecha"></a>  
+                </div>
+            </div>
+        </div>
+        </section>
+        
+    </header>
+    <script src="main.js"></script>
 </body>
 </html>
