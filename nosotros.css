@@ -5,6 +5,9 @@
   font-size: 16px;
   font-weight: normal;
 }
+body{
+  background-color: #ADC2DC;
+}
 
 h2 {
   text-align: center;
@@ -29,7 +32,7 @@ strong {
 }
 .slider-frame h3 {
   text-align: center;
-  color: #ffffff;
+  color: #ADAAB1;
   font-size: 35px;
   line-height: 35px;
   font-weight: 700;
@@ -41,7 +44,6 @@ strong {
 }
 .areas-trabajo h3 {
   text-align: center;
-  color: #191919;
   font-size: 35px;
   line-height: 40px;
   font-weight: bold;
@@ -56,12 +58,11 @@ strong {
   width: 50%;
 }
 .area h3 {
-  color: #f26522;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: Raleway, sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   margin-block-end: 10px;
   margin-block-start: 20px;
   margin-bottom: 10px;
@@ -71,21 +72,20 @@ strong {
 }
 .area p {
   font-family: Raleway, sans-serif;
-  font-weight: 400;
+  font-weight: 550;
   font-size: 14px;
   margin: 0 0 10px;
   line-height: 24px;
 }
 .area-content {
   display: inline-block;
-  border: 1px solid #ddd;
   background-color: var(--white);
   padding: 30px 30px;
   transition: 400ms;
-  color: #363636;
+  color: #020202;
 }
 .area-content:hover {
-  background-color: #24629d ;
+  background-color: #728dbf ;
   color: #ddd;
   transition:400px;
 }
@@ -103,8 +103,8 @@ strong {
 .img-area {
   display: block;
   border-radius: 50%;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
+  background-color: #F1F1F2;
+  border: 1px solid #F1F1F2;
   background-clip: padding-box;
   width: 135px;
   height: 135px;
@@ -112,7 +112,7 @@ strong {
 }
 
 .carousel-ctt .slider-frame {
-  padding: 100px 0px 160px 0px;
+  padding: 100px 0px 60px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
