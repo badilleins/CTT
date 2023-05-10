@@ -1,0 +1,129 @@
+*{
+    font-size: 62.5%;
+}
+.bar-navigation{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.bar-navigation__list1{
+    display: flex;
+}
+.bar-navigation__list2{
+    display: flex;
+}
+.bar-navigation img{
+    margin: 0 10px;
+    width: 80px;
+    height: 80px;
+}
+ul .list__item a{
+    margin: 0 24px 0 0;  
+    color: var(--white); 
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+ul .list__item a:hover{
+    color: var(--orange);
+}
+.bar-navigation img:hover{
+    transform: rotateZ(8deg);
+}
+.head-carrousel{
+    position: relative;
+    top: 0;
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+.carrousel__slider{
+    width: 300%;
+}
+.head-carrousel img{
+    width: 100%;
+    height: 100%;
+}
+.head-carrousel button{
+    position: absolute;
+    top: 70%;
+    width: 150px;
+    height: 50px;
+    left: 45%;
+    font-size: 2.4rem;
+    border:none;
+    outline: none;
+    border: 2px solid var(--ligth-grey);
+    padding: 10px 8px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+    font-family: 'Roboto';
+    font-weight: 300;
+    opacity: 20%;
+}
+.head-carrousel a{
+    color: var(--black);
+}
+.head-carrousel a:hover{
+    color: var(--dark-orange);
+}
+.head-carrousel button:hover{
+    border: 2px solid orange;
+}
+.carrousel__item{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.item__arrows{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.item__arrows img{
+    filter: opacity(10%);
+    width: 40px;
+    height: 40px;
+}
+.item__arrows img:hover{
+    filter: opacity(100%);
+}
+.head-carrousel button:hover{
+    opacity: 100%;
+}
+@keyframes slide {
+    0%{
+        margin-left:0%
+    }
+    30%{
+        margin-left:0%
+    }
+    35%{
+        margin-left:-100%
+    }
+    80%{
+        margin-left:-100%
+    }
+    85%{
+        margin-left:-200%
+    }
+    100%{
+        margin-left:-200%
+    }
+}
