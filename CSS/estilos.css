@@ -1,0 +1,121 @@
+* {
+	margin:0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #F0F2F1;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contenedor {
+	max-width: 1200px;
+	margin:50px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contenedor_tarjeta {
+	margin: 20px;
+}
+
+.contenedor_tarjeta a {
+	display: inline-block;
+}
+
+.contenedor_tarjeta:hover figure {
+	transform: perspective(300px) rotateY(180deg);
+	-webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+	box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+}
+
+figure {
+	width: 300px;
+	height: 350px;
+	margin:0;
+	position: relative;
+	transition: all ease .5s;
+	transform-style: preserve-3d;
+	/* Nota:
+		Establecemos que la imagen tendra una rotacion de 0grados al inicio porque si no
+		ponemos esta propiedad nos da un poco de problemas en algunos navegadores al pasar el cursor.
+	*/
+	transform: perspective(600px) rotateY(0deg);
+}
+
+figure .frontal,
+figure .trasera {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	transition: all ease .5s;
+}
+
+figure .frontal {
+	display: block;
+	background: #000;
+
+}
+
+figure .trasera {
+	position: absolute;
+	top: 0;
+	padding: 20px;
+	color: #fff;
+	transform: perspective(600px) rotateY(180deg);
+	backface-visibility: hidden;
+	overflow: auto;
+}
+
+.contenedor_tarjeta:nth-child(1) figure .trasera{
+    background: rgba(170,166,177,0.75);
+    background: -moz-linear-gradient(top, rgba(170,166,177,0.75) 0%, rgba(153,153,153,0.87) 47%, rgba(23,25,28,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(170,166,177,0.75)), color-stop(47%, rgba(153,153,153,0.87)), color-stop(100%, rgba(23,25,28,1)));
+    background: -webkit-linear-gradient(top, rgba(170,166,177,0.75) 0%, rgba(153,153,153,0.87) 47%, rgba(23,25,28,1) 100%);
+    background: -o-linear-gradient(top, rgba(170,166,177,0.75) 0%, rgba(153,153,153,0.87) 47%, rgba(23,25,28,1) 100%);
+    background: -ms-linear-gradient(top, rgba(170,166,177,0.75) 0%, rgba(153,153,153,0.87) 47%, rgba(23,25,28,1) 100%);
+    background: linear-gradient(to bottom, rgba(170,166,177,0.75) 0%, rgba(153,153,153,0.87) 47%, rgba(23,25,28,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaa6b1', endColorstr='#17191c', GradientType=0 );
+}
+.contenedor_tarjeta:nth-child(2) figure .trasera{
+	background: rgb(185,210,232);
+background: linear-gradient(90deg, rgba(185,210,232,1) 0%, rgba(120,170,212,0.24711134453781514) 50%, rgba(28,46,79,1) 100%);
+}
+.contenedor_tarjeta:nth-child(3) figure .trasera{
+	background: rgb(122,91,146);
+background: linear-gradient(90deg, rgba(122,91,146,1) 0%, rgba(119,144,192,0.4852065826330533) 50%, rgba(118,157,203,1) 50%, rgba(28,75,131,0.33674719887955185) 50%, rgba(28,46,79,0.7849264705882353) 100%);
+}
+
+
+figure .trasera .titulo {
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+}
+
+figure .trasera hr {
+	height: 2px;
+	background: #fff;
+	border: none;
+	margin-bottom: 20px;
+	opacity: .5;
+}
+
+figure .trasera p {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 22px;
+	font-size: 14px;
+}
+
