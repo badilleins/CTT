@@ -40,6 +40,10 @@ footer {
     gap: 10px;
     align-items: center;
 }
+.contacts-container > div a{
+    font-size: 1.4rem;
+    color: var(--black);
+}
 .contacts-container > div p{
     margin: 0;
 }
