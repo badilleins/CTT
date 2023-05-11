@@ -7,7 +7,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,100&display=swap" rel="stylesheet">
 <link href="./CSS/main.css" rel="stylesheet">
 <link href="./CSS/inicio.css" rel="stylesheet">
@@ -26,7 +27,7 @@
             </div>
             <ul class="bar-navigation__list2">
                 <li class="list__item"><a href="cursos.html">Oferta Académica</a></li>
-                <li class="list__item"><a href="footer.html">Contacto</a></li>
+                <li class="list__item"><a href="#contactos">Contacto</a></li>
             </ul>
         </nav>
         <section class="head-carrousel">
@@ -64,7 +65,7 @@
             <div class="carrousel__item" id="item__3">
                 <div class="item__card">
                     <img src="./img/contactos.jpeg" alt="img">
-                    <button><a id="#GoTo" href="#contacto">CONTACTOS</a></button>
+                    <button><a id="#GoTo" href="#contactos">CONTACTOS</a></button>
                 </div>
                 <div class="item__arrows">    
                     <a href="#item__2"><img src="./img/left.png" alt="flecha-izquierda"></a>
@@ -78,8 +79,45 @@
             </div>
         </div>
         </section>
-        
     </header>
-    <script src="main.js"></script>
+    <footer class="footer" id="contactos">
+        <svg class="svg-clip">
+            <defs>
+              <clipPath id="footerClipPath" clipPathUnits="objectBoundingBox">
+                <path d="M0,0 L0.1,0 C0.15,0.05 0.2,0.15 0.3,0.15 C0.4,0.15 0.5,0.05 0.6,0.05 C0.7,0.05 0.8,0.15 0.85,0.15 C0.9,0.15 0.95,0.1 1,0.1 L1,1 L0,1 Z"></path>
+              </clipPath>
+            </defs>
+          </svg>
+          
+           
+          <div class="contacts-container">
+            <div class="contacts-container__phone">
+                  <span class="phone__img"><img src="img/telefono.png"></span>
+                  <p class="phone__text">0962927000</p>
+                </div>
+                <div class="contacts-container__email">
+                    <span class="email__img"><img src="img/email.png"></span>
+                    <p class="email__text">ctt.fisei@uta.edu.ec</p>
+                </div>
+            </div>
+          <div class="contacts-container">
+            <div class="contacts-container__phone">
+                  <p class="description">Ing. Andrea Sánchez, Mg.</p>
+                </div>
+                <div class="contacts-container__email">
+                    <p class="email__text">Responsable CTT FISEI</p>
+                </div>
+            </div>
+          <div class="contacts-container">
+            <div class="contacts-container__phone">
+                  <p class="phone__text">Redes</p>
+                </div>
+                <div class="contacts-container__email">
+                    <span class="email__img"><img src="img/facebook.png"></span>
+                    <p class="email__text">Facebook</p>
+                </div>
+            </div>
+            </footer>
+            <script src="main.js"></script>
 </body>
 </html>
