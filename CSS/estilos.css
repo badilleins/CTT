@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 * {
 	margin:0;
@@ -49,10 +50,121 @@ figure {
 	transform-style: preserve-3d;
 	
 	transform: perspective(600px) rotateY(0deg);
+=======
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  display: grid;
+  justify-content: center;
+  background: #2161a7;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: absolute;
+  width: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  min-height: 100vh;
+  background: #adc2dc;
+}
+
+h2 {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+}
+
+p {
+  display: block;
+
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.nav-tabs > li > a {
+  line-height: 1.42857143;
+
+  margin-right: 2px;
+
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.contenedor_tarjeta {
+  margin: 20px;
+}
+
+.contenedor_tarjeta a {
+  display: inline-block;
+}
+
+.contenedor_tarjeta:hover figure {
+  transform: perspective(300px) rotateY(180deg);
+
+  -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+figure {
+  position: relative;
+
+  width: 300px;
+  height: 350px;
+  margin: 0;
+
+  transition: all ease 0.5s;
+
+  /*
+Nota:
+		Establecemos que la imagen tendra una rotacion de 0grados al inicio porque si no
+		ponemos esta propiedad nos da un poco de problemas en algunos navegadores al pasar el cursor.
+*/
+
+  transform: perspective(600px) rotateY(0deg);
+
+  transform-style: preserve-3d;
+>>>>>>> cursos
 }
 
 figure .frontal,
 figure .trasera {
+<<<<<<< HEAD
 	width: 100%;
 	height: 100%;
 	border-radius: 5px;
@@ -156,3 +268,331 @@ a:hover{
 		padding: 10px 0px;
 	}
 }
+=======
+  width: 100%;
+  height: 100%;
+
+  transition: all ease 0.5s;
+
+  border-radius: 5px;
+}
+
+figure .frontal {
+  display: block;
+
+  background: #000;
+}
+
+figure .trasera {
+  position: absolute;
+  top: 0;
+
+  overflow: auto;
+
+  padding: 20px;
+
+  transform: perspective(600px) rotateY(180deg);
+
+  color: #fff;
+
+  backface-visibility: hidden;
+}
+
+.img-curso {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.info-curso {
+  display: block;
+
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.info-curso > h2 {
+  font-size: 30px;
+  line-height: 1;
+
+  margin: 0 0 10px;
+}
+
+.info-add-curso {
+  display: flex;
+  float: left;
+
+  box-sizing: border-box;
+}
+
+.content-pri {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-curso {
+  display: flex;
+  justify-content: center;
+
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.cat-curso {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #adc2dc;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+table {
+  background-color: transparent;
+}
+
+.table > tbody > tr.active > td {
+  visibility: visible;
+
+  height: 39.8438px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+
+  background-color: #e7e5e5;
+}
+
+.tab-content > .active {
+  display: block;
+  visibility: visible;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #adc2dc;
+}
+
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.tab-content > .tab-pane {
+  display: none;
+  visibility: hidden;
+}
+
+.nav-tabs > li {
+  float: left;
+
+  margin-bottom: -1px;
+}
+
+.nav-tabs > li.active > a {
+  cursor: default;
+
+  color: #555;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  background-color: #fff;
+}
+
+.tab-content > .active {
+  display: block;
+  visibility: visible;
+}
+
+.contenedor_tarjeta:nth-child(1) {
+  background: rgba(170, 166, 177, 0.75);
+  background: -moz-linear-gradient(
+    top,
+    rgba(170, 166, 177, 0.75) 0%,
+    rgba(153, 153, 153, 0.87) 47%,
+    rgba(23, 25, 28, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(170, 166, 177, 0.75)),
+    color-stop(47%, rgba(153, 153, 153, 0.87)),
+    color-stop(100%, rgba(23, 25, 28, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(170, 166, 177, 0.75) 0%,
+    rgba(153, 153, 153, 0.87) 47%,
+    rgba(23, 25, 28, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(170, 166, 177, 0.75) 0%,
+    rgba(153, 153, 153, 0.87) 47%,
+    rgba(23, 25, 28, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(170, 166, 177, 0.75) 0%,
+    rgba(153, 153, 153, 0.87) 47%,
+    rgba(23, 25, 28, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(170, 166, 177, 0.75) 0%,
+    rgba(153, 153, 153, 0.87) 47%,
+    rgba(23, 25, 28, 1) 100%
+  );
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aaa6b1', endColorstr='#17191c', GradientType=0);
+}
+
+.contenedor_tarjeta:nth-child(2) {
+  background: rgb(185, 210, 232);
+  background: linear-gradient(
+    90deg,
+    rgba(185, 210, 232, 1) 0%,
+    rgba(120, 170, 212, 0.24711134453781514) 50%,
+    rgba(28, 46, 79, 1) 100%
+  );
+}
+
+.contenedor_tarjeta:nth-child(3) {
+  background: rgb(122, 91, 146);
+  background: linear-gradient(
+    90deg,
+    rgba(122, 91, 146, 1) 0%,
+    rgba(119, 144, 192, 0.4852065826330533) 50%,
+    rgba(118, 157, 203, 1) 50%,
+    rgba(28, 75, 131, 0.33674719887955185) 50%,
+    rgba(28, 46, 79, 0.7849264705882353) 100%
+  );
+}
+
+figure .trasera .titulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+
+  margin-bottom: 20px;
+
+  color: #fff;
+}
+
+figure .trasera hr {
+  height: 2px;
+  margin-bottom: 20px;
+
+  opacity: 0.5;
+  border: none;
+  background: #fff;
+}
+
+figure .trasera p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/*
+nota:
+prueba tab panel
+*/
+
+section.ct {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-container {
+  display: inline-block;
+
+  width: 65%;
+
+  border-radius: 5px;
+  box-shadow: inset rgba(0, 0, 0, 0.8);
+}
+
+.options {
+  display: inline-block;
+
+  width: fit-content;
+  height: fit-content;
+
+  list-style: none;
+}
+
+.option {
+  font-weight: 800;
+  line-height: 25px;
+
+  display: inline-table;
+  flex-grow: 1;
+
+  width: fit-content;
+  padding: 10px;
+
+  cursor: pointer;
+  text-align: center;
+
+  color: #2161a7;
+  border: solid 1px rgba(4, 51, 78, 0.6);
+}
+
+.option-active {
+  padding: 10px;
+
+  border-bottom: 1px solid rgba(7, 63 95, 0.4);
+  background: var(--bg-active);
+}
+
+.contents {
+  width: 100%;
+  height: 85%;
+}
+
+.content {
+  display: none;
+
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+
+  color: #202020;
+}
+
+.content-active {
+  display: block;
+
+  background: var(--bg-active);
+}
+
+.content h3 {
+  margin: 10px;
+  padding-bottom: 10px;
+
+  text-align: center;
+  letter-spacing: 2px;
+
+  border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+}
+
+.content p {
+  margin: 15px;
+
+  letter-spacing: 1px;
+}
+
+footer p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  text-align: center;
+}
+>>>>>>> cursos
