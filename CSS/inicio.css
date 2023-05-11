@@ -4,12 +4,14 @@
 .bar-navigation{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 0;
     z-index: 1;
     width: 100%;
+    height: 180px;
 }
 ul{
     list-style: none;
@@ -24,7 +26,7 @@ ul{
     display: flex;
 }
 .bar-navigation img{
-    height: 100px;
+    height: 70px;
     filter: drop-shadow(2px 4px 6px var(--black));
 }
 .utaLink{
@@ -36,7 +38,7 @@ ul{
 ul .list__item a{
     color: var(--white); 
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 500;
     filter: drop-shadow(2px 4px 6px var(--black));
 
 }
@@ -62,7 +64,7 @@ ul .list__item a:hover{
     position: relative;
     top: 0;
     width: 100vw;
-    height: 60vh;
+    height: 75vh;
     overflow: hidden;
 }
 .carrousel__slider{
@@ -118,7 +120,7 @@ ul .list__item a:hover{
 }
 .item__arrows{
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 46%;
     display: flex;
     align-items: center;
@@ -176,5 +178,43 @@ ul .list__item a:hover{
     }
     100%{
         margin-left:-200%
+    }
+}
+@media (max-width:1000px){
+    .bar-navigation .utaLink img{
+        display: none;
+    }
+    ul .list__item a{
+        font-size: 1.4rem;
+    }
+    footer p {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:630px){
+    .bar-navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+    ul .list__item a{
+        font-size: 1.2rem;
+    }
+    footer p {
+        font-size: 1.2rem;
+    }
+    
+}
+@media (max-width:500px){
+    .footer img{
+        width: 15px;
+        height: 15px;
+    }
+    .footer{
+        flex-direction: column;
+        padding-bottom:30px;
+    }
+    .head-carrousel button{
+        left: 30%;
     }
 }
