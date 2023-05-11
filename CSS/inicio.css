@@ -1,0 +1,225 @@
+*{
+    font-size: 62.5%;
+}
+.body-inicio{
+        scroll-behavior: smooth;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100vh;
+}
+.bar-navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 180px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.bar-navigation__list1{
+    display: flex;
+}
+.bar-navigation__list2{
+    display: flex;
+}
+.bar-navigation img{
+    height: 70px;
+    filter: drop-shadow(2px 4px 6px var(--black));
+}
+.utaLink{
+    width: 80px;
+}
+.cttLink{
+    width: 150px;
+}
+ul .list__item a{
+    color: var(--white); 
+    font-size: 2rem;
+    font-weight: 500;
+    filter: drop-shadow(2px 4px 6px var(--black));
+
+}
+ul .list__item{
+    border: solid 1px transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0 24px 0 0;  
+    padding: 12px;
+}
+ul .list__item:hover{
+    border:solid 1px var(--blue);
+    border-radius: 20px;
+}
+ul .list__item a:hover{
+    opacity: 80%;
+}
+.bar-navigation img:hover{
+    transform: scale(0.95);
+}
+.head-carrousel{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+}
+.carrousel__slider{
+    display: flex;
+    height: 100%;
+    width: 300%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+.head-carrousel img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+
+}
+.head-carrousel button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    width: 150px;
+    height: 50px;
+    left: 45%;
+    font-size: 2.4rem;
+    border:none;
+    outline: none;
+    border: 2px solid var(--grey);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+    font-family: 'Roboto';
+    font-weight: 500;
+    opacity: 20%;
+}
+.head-carrousel a{
+    color: var(--black);
+}
+.head-carrousel a:hover{
+    color: var(--blue);
+}
+.head-carrousel button:hover{
+    border: 2px solid var(--opaque-blue);
+}
+.carrousel__item{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.item__card{
+    height: 100%;
+}
+.item__arrows{
+    position: absolute;
+    top: 75%;
+    left: 46%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+.item__arrows img{
+    opacity:20%;
+    width: 40px;
+    height: 40px;
+}
+.item__arrows img:hover{
+    opacity: 100%;
+}
+.head-carrousel button:hover{
+    opacity: 100%;
+}
+.carrousel__navigator{
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.carrousel__navigator li a{
+    color: var(--white);
+    filter: opacity(30%);
+    width: 90px;
+    height: 90px;
+    font-size:2.4rem;
+}
+.carrousel__navigator li a:hover{
+    color: var(--blue);
+    filter: opacity(100%);
+}
+.carrousel__navigator li a:hover{
+    color: var(--blue);
+}
+@keyframes slide {
+    0%{
+        margin-left:0%
+    }
+    30%{
+        margin-left:0%
+    }
+    35%{
+        margin-left:-100%
+    }
+    65%{
+        margin-left:-100%
+    }
+    70%{
+        margin-left:-200%
+    }
+    100%{
+        margin-left:-200%
+    }
+}
+@media (max-width:1000px){
+    .bar-navigation .utaLink img{
+        display: none;
+    }
+    ul .list__item a{
+        font-size: 1.4rem;
+    }
+    footer p {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:630px){
+    .bar-navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+    ul .list__item a{
+        font-size: 1.2rem;
+    }
+    footer p {
+        font-size: 1.2rem;
+    }
+    
+}
+@media (max-width:500px){
+    .footer img{
+        width: 15px;
+        height: 15px;
+    }
+    .footer{
+        flex-direction: column;
+        padding-bottom:30px;
+    }
+    .head-carrousel button{
+        left: 30%;
+    }
+}
